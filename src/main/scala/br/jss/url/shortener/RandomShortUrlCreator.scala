@@ -4,11 +4,10 @@ import scala.util.Random
 
 object RandomShortUrlCreator {
   private val rawAlphabet = "abcdefghijklmnopqrstuvwyz"
-  private val rawNumbers = "0123456789"
 
   private val lowerCaseAlphabetArray = rawAlphabet.toCharArray
   private val upperCaseAlphabetArray = rawAlphabet.toUpperCase.toCharArray
-  private val numbersArray = rawNumbers.toCharArray
+  private val numbersArray = "0123456789".toCharArray
 
   def create(): String = {
     var randomUrl = ""
